@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeScribe - Under Maintenance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        .title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #f8f9fa;
+        }
+        
+        .message {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #e9ecef;
+            line-height: 1.6;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .status {
+            font-size: 1rem;
+            color: #ced4da;
+        }
+    </style>
+    <script>
+        // Auto refresh every 30 seconds
+        setTimeout(() => {
+            window.location.reload();
+        }, 30000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">TradeScribe</div>
+        <h1 class="title">Under Maintenance</h1>
+        <div class="spinner"></div>
+        <p class="message">
+            We're currently performing scheduled maintenance to improve our services.<br>
+            Please check back in a few minutes.
+        </p>
+        <p class="status">This page will automatically refresh in 30 seconds</p>
+    </div>
+</body>
+</html>
